@@ -6,7 +6,7 @@ use App\Http\Controllers\ProfileController;
 
 
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('dashboard');
 
 
 Route::middleware('auth')->group(function () {
