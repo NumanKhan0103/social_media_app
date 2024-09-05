@@ -1,5 +1,8 @@
 <script setup>
-// import GroupList from "../components/app/GroupList.vue";
+import GroupList from '@/Components/app/GroupList.vue';
+import FollowingList from '@/Components/app/FollowingList.vue';
+import CreatePost from '@/Components/app/CreatePost.vue';
+import PostList from '@/Components/app/PostList.vue';
 
 defineProps({});
 
@@ -18,12 +21,16 @@ defineProps({});
 
 
         <div class="col-span-6">
-            Posts
+            
+            <CreatePost />
+            
+            <PostList />
+
         </div>
 
 
         <div class="col-span-3">
-            Followers
+            <FollowingList />
         </div>
     </div>
 
